@@ -1,0 +1,16 @@
+Theme: <%= select_tag :themes, options_for_select(%w{active4d all_hallows_eve amy blackboard brilliance_black brilliance_dull cobalt dawn eiffel espresso_libre idle iplastic lazy mac_classic magicwb_amiga pastels_on_dark spacecadet sunburst twilight zenburnesque}), :onChange => "changeStyle(this.value)", :id => "theme_picker" %><br/>
+<p>
+  <b>Language:</b>
+  <%=h @paste.language %>
+</p>
+<div id="code">
+<p>
+  <b>Code:</b>
+  <%=c @paste.code, :syntax => @paste.language %>
+</p>
+</div>
+
+
+
+<%= link_to 'Edit', edit_paste_path(@paste) %> |
+<%= link_to 'Back', pastes_path %>
