@@ -1,0 +1,11 @@
+<table>
+  <thead>
+    <tr>
+      <th colspan="4"><h1>Pictures</h1></th>
+      <th><%= link_to 'New picture', new_picture_path %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= p2trs @pictures, 5 %>
+  </tbody>
+</table>

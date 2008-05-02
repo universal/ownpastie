@@ -96,7 +96,7 @@ table tbody td, table tbody th {padding: 10px; background: url("td_back.gif") re
 
 table tbody tr {background: #F3F5F7;}
 
-table tbody tr.odd {background: #F0F2F4;}
+table tbody tr.odd {background: #e3ebf4;}
 
 table tbody tr:hover {background: #EAECEE; color: #111;}
 
