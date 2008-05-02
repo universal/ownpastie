@@ -1,20 +1,14 @@
-<h1>Editing paste</h1>
+<table>
+  <thead>
+    <tr>
+      <th><h1><h1>Editing paste</h1></h1></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render :partial => 'form' %>
+    <tr>
+      <td><%= link_to 'Show', @paste %> | <%= link_to 'Back', pastes_path %></td>
+    </tr>
+  </tbody>
+</table>
 
-<%= error_messages_for :paste %>
-
-<% form_for(@paste) do |f| %>
-  <p>
-    <b>Language</b><br />
-    <%= f.select :language, SYNTAXES %>
-  </p>
-  <p>
-    <b>Code</b><br />
-    <%= f.text_area :code %>
-  </p>
-  <p>
-    <%= f.submit "Update" %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @paste %> |
-<%= link_to 'Back', pastes_path %>

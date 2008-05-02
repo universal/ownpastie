@@ -14,6 +14,7 @@
         </div>
       </td>
     </tr>
+
     <tr>
       <td><%= link_to 'Edit', edit_paste_path(@paste) %></td>
       <td><%= link_to 'Back', pastes_path %></td>

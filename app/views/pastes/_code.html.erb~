@@ -1,0 +1,10 @@
+  <tbody>
+    <tr>
+      <td><%=h paste.code[0, 25] %></td>
+      <td><%=h paste.language %></td>
+      <td><%= link_to 'Show', paste %></td>
+      <td><%= link_to 'Edit', edit_paste_path(paste) %></td>
+      <td><%= link_to 'Destroy', paste, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  </tbody>
+

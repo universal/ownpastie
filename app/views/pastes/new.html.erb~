@@ -5,7 +5,7 @@
     </tr>
   </thead>
   <tbody>
-    <%= render :partial => 'form' %>
+    <%= render_partial 'form' %>
     <tr>
       <td><%= link_to 'Back', pastes_path %></td>
     </tr>
