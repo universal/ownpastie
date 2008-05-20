@@ -88,6 +88,12 @@ table caption {text-align: left; text-transform: uppercase;  padding-bottom: 10p
 
 table thead th {background: #3A4856; padding: 15px 10px; color: #fff; text-align: left; font-weight: normal;}
 
+table thead a {color: #FFFFFF; text-decoration: none; border-bottom: 1px solid #FFFFFF;}  
+
+table thead a:visited {color: #AFAFAF;}
+
+table thead a:hover {color: #000;} 
+
 table tbody, table thead {border-left: 1px solid #EAECEE; border-right: 1px solid #EAECEE;}
 
 table tbody {border-bottom: 1px solid #EAECEE;}
@@ -96,8 +102,8 @@ table tbody td, table tbody th {padding: 10px; background: url("td_back.gif") re
 
 table tbody tr {background: #F3F5F7;}
 
-table tbody tr.odd {background: #F0F2F4;}
+table tbody tr.odd {background: #e3ebf4;}
 
-table tbody  tr:hover {background: #EAECEE; color: #111;}
+table tbody tr:hover {background: #EAECEE; color: #111;}
 
 table tfoot td, table tfoot th, table tfoot tr {text-align: left; font: 120%  "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif; text-transform: uppercase; background: #fff; padding: 10px;}
