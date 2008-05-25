@@ -3,4 +3,5 @@ tmp
 *.log
 *.output
 *.sqlite3
+public/pictures/*
 
