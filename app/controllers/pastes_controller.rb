@@ -1,4 +1,11 @@
 class PastesController < ApplicationController
+  # GET /pastes/:id/diff/:version
+  def diff
+    logger.info params
+    @paste = Paste.find(params[:id])
+    @old_paste = @paste.versions.find_by_version(params[:version])
+  end
+
   # GET /pastes
   def index
     @pastes = Paste.find(:all, :order => "id DESC")

@@ -1,0 +1,34 @@
+<table class="diff">
+  <tr>
+    <th colspan="4">
+      VersionControl like diff
+    </th>  
+  </tr>
+  <tr>
+    <th>Nr:</th>
+    <th>Old</th>
+    <th>New</th>
+    <th>Nr:</th>    
+  </tr>
+  <%= vc_diff(@old_paste.code, @paste.code) %>
+</table>
+
+<table class="diff">
+  <tr>
+    <th colspan="4">
+      Side by Side diff
+    </th>  
+  </tr>
+  <tr>
+    <th>Nr:</th>
+    <th>Old</th>
+    <th>New</th>
+    <th>Nr:</th>    
+  </tr>
+  <%= line_diff(@old_paste.code, @paste.code) %>
+</table>
+<hr/>
+<p>
+  <strong>Correction diff</strong><br/>
+  <%= correction_diff(@old_paste.code, @paste.code) %>
+</p>

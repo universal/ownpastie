@@ -6,11 +6,12 @@ body, p, ol, ul, td {
   line-height: 18px;
 }
 
-pre {
+/*pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
+*/
 
 /*
 a { color: #000; }
@@ -107,3 +108,23 @@ table tbody tr.odd {background: #e3ebf4;}
 table tbody tr:hover {background: #EAECEE; color: #111;}
 
 table tfoot td, table tfoot th, table tfoot tr {text-align: left; font: 120%  "Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", sans-serif; text-transform: uppercase; background: #fff; padding: 10px;}
+
+pre {
+  margin: 0;
+  font-family: Lucida, Courier, monospaced;
+}
+
+.match {
+  background-color: #DDFFDD; 
+}
+.only_a {
+  background-color: #fdd;
+  color: red;
+}
+.only_b {
+  background-color: #ddf;
+  color: blue;
+}
+.change {
+  background-color: #A6A6A6;
+}

@@ -4,10 +4,13 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resource :session
 
-  map.resources :pastes
+  map.resources :pastes 
+  
+  map.paste_diff "/pastes/:id/diff/:version", :controller => "pastes", :action => "diff"
+  map.resources :pictures
+  
   map.root :controller => "pastes"
   
-  map.resources :pictures
   
   # The priority is based upon order of creation: first created -> highest priority.
 
